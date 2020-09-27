@@ -1,5 +1,5 @@
 let slideIndex = 0;
-const slideTimeInterval = 2000;
+const slideTimeInterval = 3000;
 
 setSlide(slideIndex);
 

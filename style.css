@@ -11,13 +11,13 @@
 
 .carousel_container {
     position: relative;
-    width: 70%;
+    width: 100%;
     margin: auto;
     border: 1px black solid;
 }
 
 .caro_image {
-    max-width: 70%;
+    max-width: 100%;
     margin: auto;
     display: none;
 }
@@ -56,9 +56,37 @@
 }
 
 
+.side_arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    font-size: 3rem;
+    color: #e9ecef;
+    margin-left: 2rem;
+}
+
+.side_arrow.right {
+    right: 0px;
+    margin-right: 2rem;
+}
+
+.side_arrow i {
+    font-weight: bolder;
+}
+
+
+.carousel_container:hover .side_arrow {
+    display: block;
+}
+
 .dots {
-    border: .5px red solid;
-    text-align: center;
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .dot {
@@ -68,14 +96,17 @@
     height: 10px;
     width: 20px;
     border-radius: 10px;
+    transition: .3s ease-in-out;
 }
 
 .dot:hover {
-    background-color: yellowgreen;
+    background-color: #000000ba;
 }
 
 .active_dot {
-    width: 30px
+    width: 30px;
+    background-color: black;
+
 }
 
 .side_arrow {
