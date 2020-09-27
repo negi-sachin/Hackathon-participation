@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+#carousel {
+    width: 100%;
+}
+
+.carousel_container {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    border: 1px black solid;
+}
+
+.caro_image {
+    max-width: 70%;
+    margin: auto;
+    display: none;
+}
+
+.caro_image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Fading animation */
+.fadeIn {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.dots {
+    border: .5px red solid;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    display: inline-block;
+    background-color: grey;
+    height: 10px;
+    width: 20px;
+    border-radius: 10px;
+}
+
+.dot:hover {
+    background-color: yellowgreen;
+}
+
+.active_dot {
+    width: 30px
+}
+
+.side_arrow {
+    cursor: pointer;
+}
