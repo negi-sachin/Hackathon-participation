@@ -1,4 +1,6 @@
 let slideIndex = 0;
+const slideTimeInterval = 2000;
+
 setSlide(slideIndex);
 
 function moveSlide(m) {
@@ -25,4 +27,9 @@ function setSlide(n) {
     console.log(n, slideIndex, slides);
     slides[slideIndex].style.display = "block"
     dots[slideIndex].classList.add('active_dot')
+
+}
+window.onload = () => {
+    console.log("window loaded");
+    setInterval(() => setSlide(slideIndex + 1), slideTimeInterval)
 }
