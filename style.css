@@ -115,6 +115,12 @@
 }
 
 
+
+.cards_container a:hover {
+    color: black;
+    text-decoration: none;
+}
+
 .card {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -143,6 +149,6 @@
 .desc {
 
     max-height: 0;
-    transition: max-height .3s ease-out;
+    transition: max-height .3s ease-in-out;
     overflow: hidden;
 }
